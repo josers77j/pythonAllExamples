@@ -1,25 +1,21 @@
-from abc import ABC, abstractmethod
-
-class Ruben :
+class U20181049 :
         
     def __init__(self, nombre:str):
             self.nombre = nombre
-            
-            
-    @abstractmethod
+                
     def tarea(self) -> str:
             pass
         
-class lavarRopa(Ruben) :
+class lavarRopa(U20181049) :
     def tarea(self) -> str:
             return f"{self.nombre} esta lavando ropa" 
         
-class tenderRopa(Ruben) :
+class tenderRopa(U20181049) :
     def tarea(self) -> str:
             return f"{self.nombre} esta tendiendo ropa" 
         
 
-class recogerRopa(Ruben) :
+class recogerRopa(U20181049) :
     def tarea(self) -> str:
         return f"{self.nombre} esta recogiendo la ropa" 
         
